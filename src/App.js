@@ -1,32 +1,18 @@
+import { BrowserRouter, Route } from 'react-router-dom';
+import { Switch } from 'react-router';
 import Header from './components/Header.js';
-import PromoImage from './assets/promo.svg';
+import HomePage from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
 
 const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      <section className="hero">
-        <div className="hero-body px-0">
-          <div className="container is-flex is-flex-direction-column px-4">
-            <h1 className="title has-text-centered">Привет, я Куаныш</h1>
-            <h2 className="subtitle has-text-centered">
-              Добро пожаловать в место, где я храню свои заметочки
-            </h2>
-            <img
-              className="is-block mx-auto mb-4"
-              src={PromoImage}
-              alt="qwanysh"
-            />
-            <a className="button is-text is-align-self-center" href="#">
-              Перейти к списку заметочек
-              <span class="icon is-small ml-1">
-                <i class="fas fa-arrow-right"></i>
-              </span>
-            </a>
-          </div>
-        </div>
-      </section>
-    </>
+      <Switch>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/login" exact component={LoginPage} />
+      </Switch>
+    </BrowserRouter>
   );
 };
 

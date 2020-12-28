@@ -1,17 +1,19 @@
+import { Link } from 'react-router-dom';
+
 const Header = () => {
   return (
     <header className="py-4">
       <div className="container is-flex is-justify-content-space-between is-align-items-center px-4">
-        <div className="is-flex is-align-items-center">
-          <span class="icon is-small mr-1">
-            <i class="fas fa-sticky-note"></i>
+        <Link className="button is-white is-rounded is-flex is-align-items-center" to="/">
+          <span className="icon is-small mr-1 has-text-dark">
+            <i className="fas fa-sticky-note" />
           </span>
           <div className="title is-6 mb-0">Заметочки</div>
-        </div>
+        </Link>
         <div className="is-flex">
-          <a className="button is-rounded is-warning" href="#">
+          <Link className="button is-rounded is-warning" to="/login">
             Войти
-          </a>
+          </Link>
         </div>
       </div>
     </header>
