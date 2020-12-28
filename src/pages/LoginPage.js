@@ -7,7 +7,7 @@ const LoginPage = () => {
         <div className="container is-flex is-flex-direction-column px-4">
           <h1 className="title has-text-centered">Войти</h1>
           <h2 className="subtitle has-text-centered">
-            Войдите, чтобы иметь доступ над заметочками
+            Войдите, чтобы иметь доступ к заметочкам
           </h2>
           <LoginForm />
         </div>
