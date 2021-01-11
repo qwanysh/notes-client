@@ -3,6 +3,7 @@ import { Switch } from 'react-router';
 import Header from './components/Header.js';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
+import NoteListPage from './pages/NoteListPage';
 
 const App = () => {
   return (
@@ -10,7 +11,8 @@ const App = () => {
       <Header />
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/signin" exact component={LoginPage} />
+        <Route path="/sign-in" exact component={LoginPage} />
+        <Route path="/notes" exact component={NoteListPage} />
       </Switch>
     </BrowserRouter>
   );
