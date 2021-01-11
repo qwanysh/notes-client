@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header className="py-5 has-shadow">
+    <header className="py-5">
       <div className="container is-flex is-justify-content-space-between is-align-items-center px-5">
         <Link
           className="button is-white is-rounded is-flex is-align-items-center"
